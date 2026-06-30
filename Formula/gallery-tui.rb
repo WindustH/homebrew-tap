@@ -3,7 +3,11 @@ class GalleryTui < Formula
   homepage "https://github.com/WindustH/gallery-tui"
   version "0.1.1"
   license "MIT"
-  head "https://github.com/WindustH/gallery-tui.git", branch: "master"
+
+  head do
+    url "https://github.com/WindustH/gallery-tui.git", branch: "master"
+    depends_on "rust" => :build
+  end
 
   if OS.mac?
     if Hardware::CPU.arm?
@@ -23,7 +27,7 @@ class GalleryTui < Formula
 
   def install
     if build.head?
-      system "cargo", "install", *std_cargo_args
+      system Formula["rust"].opt_bin/"cargo", "install", *std_cargo_args
     else
       bin.install "gallery-tui"
       doc.install "README.md"
