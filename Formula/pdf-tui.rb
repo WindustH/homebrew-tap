@@ -1,7 +1,7 @@
 class PdfTui < Formula
   desc "Terminal PDF reader built with Ratatui and terminal graphics protocols"
   homepage "https://github.com/WindustH/pdf-tui"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
   PDFIUM_RELEASE = "7961"
 
@@ -11,11 +11,11 @@ class PdfTui < Formula
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/WindustH/pdf-tui/releases/download/v0.2.2/pdf-tui-0.2.2-aarch64-apple-darwin.tar.gz"
-    sha256 "4d191b86a47aa3b3dc13ffad858cfd38d962784ec6a2d308a6cf7ad9f7d00510"
+    url "https://github.com/WindustH/pdf-tui/releases/download/v0.2.3/pdf-tui-0.2.3-aarch64-apple-darwin.tar.gz"
+    sha256 "65b686c135fa6d32e9245503621dfcaa9d05c2c736a1da3c84685c163e8dec67"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/WindustH/pdf-tui/releases/download/v0.2.2/pdf-tui-0.2.2-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "032c3eec9ab30d88c7c051e0d2a14724edab63055c50f47cc313e3ead8125b8a"
+    url "https://github.com/WindustH/pdf-tui/releases/download/v0.2.3/pdf-tui-0.2.3-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "ef9c2369bac37f7e487199695ba696f6f4166e32761765747cec71049591d8e6"
   end
 
   depends_on "rust" => :build if build.head?
