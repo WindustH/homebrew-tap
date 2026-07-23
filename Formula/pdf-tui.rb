@@ -47,7 +47,6 @@ class PdfTui < Formula
       system "git", "submodule", "update", "--init", "--recursive"
       system Formula["rust"].opt_bin/"cargo", "install", *std_cargo_args
       libexec.install bin/"pdf-tui" => "pdf-tui.real"
-      rm bin/"pdf-tui"
     else
       libexec.install "pdf-tui" => "pdf-tui.real"
       doc.install "README.md"
