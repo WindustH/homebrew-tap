@@ -7,10 +7,10 @@ class CalibreTui < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/WindustH/calibre-tui/releases/download/v0.6.1/calibre-tui-0.6.1-aarch64-apple-darwin.tar.gz"
-    sha256 "078cccff0de8a55d533b4a67c760ddc1c6349882317c0d2cb2c0c4a8f8a076a7"
+    sha256 "8b25be50fbbcc34655f859fe3199d80f7f8488e8a0e789344c8738772cde6647"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/WindustH/calibre-tui/releases/download/v0.6.1/calibre-tui-0.6.1-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "3ec8c1f1571258eb03afc90cbd1316c4d12b1340565781cf5f0b63bcc3996adf"
+    sha256 "0389535769c68a78e7e4678c91e95f8d5f6bc59fc4e69c173b95dc065e7ee1cb"
   end
 
   depends_on "rust" => :build if build.head?
