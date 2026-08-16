@@ -1,7 +1,7 @@
 class GalleryTui < Formula
   desc "Terminal image gallery powered by Ratatui and Chafa"
   homepage "https://github.com/WindustH/gallery-tui"
-  version "0.2.7"
+  version "0.2.8"
   license "MIT"
 
   head do
@@ -10,11 +10,11 @@ class GalleryTui < Formula
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/WindustH/gallery-tui/releases/download/v0.2.7/gallery-tui-0.2.7-aarch64-apple-darwin.tar.gz"
-    sha256 "3c7285b5fc96b937f546b12e76ee037181bf43523cb0c4f3f4a10188adad8120"
+    url "https://github.com/WindustH/gallery-tui/releases/download/v0.2.8/gallery-tui-0.2.8-aarch64-apple-darwin.tar.gz"
+    sha256 "cdcdedfd8f99e2005e17a9a826a142c50c1e0d86a5fc70e2a9b406027c465fb7"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/WindustH/gallery-tui/releases/download/v0.2.7/gallery-tui-0.2.7-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "596cf5dd9f786d9e9e35df18d1339b553872e8cb2f7455fb60d8265d6b6eace6"
+    url "https://github.com/WindustH/gallery-tui/releases/download/v0.2.8/gallery-tui-0.2.8-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "d30fcdcaff0c9079cc06631b586f8e4b65c906c208f16dea525bf3818e375ce7"
   end
 
   depends_on "rust" => :build if build.head?
