@@ -1,20 +1,17 @@
 class MusicTui < Formula
   desc "Terminal music player backed by MPD, with covers, synced lyrics and a visualizer"
   homepage "https://github.com/WindustH/music-tui"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
-  head "https://github.com/WindustH/music-tui.git", branch: "master"
+  head "https://github.com/WindustH/music-tui.git", branch: "main"
 
-  # TODO: after publishing the v0.1.0 GitHub release (the release workflow
-  # uploads the .sha256 sidecars), replace the head-only build with bottles:
-  #
-  # if OS.mac? && Hardware::CPU.arm?
-  #   url "https://github.com/WindustH/music-tui/releases/download/v0.1.0/music-tui-0.1.0-aarch64-apple-darwin.tar.gz"
-  #   sha256 "<sha256 from the release asset>"
-  # elsif OS.linux? && Hardware::CPU.intel?
-  #   url "https://github.com/WindustH/music-tui/releases/download/v0.1.0/music-tui-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-  #   sha256 "<sha256 from the release asset>"
-  # end
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/WindustH/music-tui/releases/download/v0.1.1/music-tui-0.1.1-aarch64-apple-darwin.tar.gz"
+    sha256 "efb9dc0e9e6cb01e4803a899f86ed756792012e9f2b6d90c2afb1f5dedb9613b"
+  elsif OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/WindustH/music-tui/releases/download/v0.1.1/music-tui-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "ac8c18f09ee54e9717632c0c67e99a63e018600c75399e83a165ce7977e1722d"
+  end
 
   depends_on "rust" => :build if build.head?
   depends_on "mpd"
