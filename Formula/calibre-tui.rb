@@ -1,16 +1,16 @@
 class CalibreTui < Formula
   desc "Search and open books in a Calibre library from a terminal UI"
   homepage "https://github.com/WindustH/calibre-tui"
-  version "0.6.1"
+  version "0.6.2"
   license "MIT"
   head "https://github.com/WindustH/calibre-tui.git", branch: "master"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/WindustH/calibre-tui/releases/download/v0.6.1/calibre-tui-0.6.1-aarch64-apple-darwin.tar.gz"
-    sha256 "8b25be50fbbcc34655f859fe3199d80f7f8488e8a0e789344c8738772cde6647"
+    url "https://github.com/WindustH/calibre-tui/releases/download/v0.6.2/calibre-tui-0.6.2-aarch64-apple-darwin.tar.gz"
+    sha256 "42d1f685cb4096f77b2ab337057acec531685e9155eb50fa3321dfeb71a7d142"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/WindustH/calibre-tui/releases/download/v0.6.1/calibre-tui-0.6.1-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "0389535769c68a78e7e4678c91e95f8d5f6bc59fc4e69c173b95dc065e7ee1cb"
+    url "https://github.com/WindustH/calibre-tui/releases/download/v0.6.2/calibre-tui-0.6.2-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "ef48ae7b63dfb1a3800a6092f49e46e7fd6f67c73d850a9226f135cf18504167"
   end
 
   depends_on "rust" => :build if build.head?
