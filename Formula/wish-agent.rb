@@ -1,28 +1,28 @@
 class WishAgent < Formula
   desc "Self-hosted AI agent server and web app with shell tools and many model providers"
   homepage "https://github.com/WindustH/wish-core"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.1.0/wish-agent-0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "29e3b5db542def83e362ed6a7fde415c961065bd414bf5c785fc71cec616cfaa"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.1.1/wish-agent-0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "6b56be2994f6c28a3c48193655a25eebc37793b4a29ac02d4716f71d7c8b04b9"
     end
     on_intel do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.1.0/wish-agent-0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "3ad159f1b0a6d5f2d65f9c7c056a086fff6e3463256f897b830022ee11f488a2"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.1.1/wish-agent-0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "a995d860bc5c356628d6f0b814e8bcb8cfe8c31d573977cedc9e3eeb6c81f3d2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.1.0/wish-agent-0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "03bcf8b2eca2bb671a664ba092e9b9dfd86285ccdf493d5f6d7b62e83de1b1f5"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.1.1/wish-agent-0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "30ae81bd84eb50e172de3fa2a4fbc3854cc804badb42427cca638080c1e916be"
     end
     on_intel do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.1.0/wish-agent-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "978ee56851ac3fbc078aec1157319adb0886c03c098d22143cd5799ab218dbe2"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.1.1/wish-agent-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4fbe6a0132ab6a0cb43178bcd01a92e1cc44d9140517c708a478783d38c27989"
     end
   end
 
