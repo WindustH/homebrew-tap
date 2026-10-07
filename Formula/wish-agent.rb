@@ -1,30 +1,30 @@
 class WishAgent < Formula
   desc "Self-hosted AI agent server and web app with shell tools and many model providers"
   homepage "https://github.com/WindustH/wish-core"
-  version "0.1.3"
+  version "0.2.0"
   license "MIT"
 
   conflicts_with "tcl-tk", because: "both install a `wish` binary"
 
   on_macos do
     on_arm do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.1.3/wish-agent-0.1.3-aarch64-apple-darwin.tar.gz"
-      sha256 "88aad54f476dab1e771ec8e66f1e1d5e2622693cc2cd3ffae3bb1ebe3e9ddc24"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.0/wish-agent-0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "2a92b34ccda67d7fcf439d94089507093b96747a5eddb16bb5f40044b6dfb6ef"
     end
     on_intel do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.1.3/wish-agent-0.1.3-x86_64-apple-darwin.tar.gz"
-      sha256 "767b520e239ad7b8e1966270595c0bcd1da673c5f823704a34ce499ac097c65f"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.0/wish-agent-0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "6ebe037a2090ce007801808e7e7cd39288c9dbef1e902e3c9f771a3eade35d49"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.1.3/wish-agent-0.1.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2c8d396138fb92a5c6203b2c9571d4398dfdec784cc7f45d0cec97a5d47980da"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.0/wish-agent-0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2be02df3eaf4ab4bdc218253ddd63b8f215026a82f27f8887e49f99766c2a841"
     end
     on_intel do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.1.3/wish-agent-0.1.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0dfc25f167c0ad90846d1049b7f2a2a41a49aec15f1050617580bffd3303419e"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.0/wish-agent-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7758a8e4a0dfcabe34cc6fd0ea1b6236669ba67ee34b5d55fb6d31b0b76f3da1"
     end
   end
 
