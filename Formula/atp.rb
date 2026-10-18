@@ -1,7 +1,7 @@
 class Atp < Formula
   desc "One command for all the platforms: read, search, post, chat and download"
   homepage "https://github.com/WindustH/atp"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   head do
@@ -11,14 +11,14 @@ class Atp < Formula
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/WindustH/atp/releases/download/v0.1.1/atp-0.1.1-aarch64-apple-darwin.tar.gz"
-    sha256 "7b7c6fb8381efa4b30875bd35791055a121c8313dc07365e87e7bd104234c656"
+    url "https://github.com/WindustH/atp/releases/download/v0.2.0/atp-0.2.0-aarch64-apple-darwin.tar.gz"
+    sha256 "c78265e23c347a544c7271228c943417e7aee9986b8618b4765d3973a03e7ab9"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/WindustH/atp/releases/download/v0.1.1/atp-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "e13cc6d10fca0c8b3dd242fbf383370a975db07e85dfeec86bba57c13270c3fe"
+    url "https://github.com/WindustH/atp/releases/download/v0.2.0/atp-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "bd38424085dfbb4c53dc7602bc199aec140644c5eb681140ddd461f9a6ee5437"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/WindustH/atp/releases/download/v0.1.1/atp-0.1.1-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "ed78ce7bc1d97fe2dcfa10fff8b95e0a0f24c656e74ffdb7b71d0148ca451a7b"
+    url "https://github.com/WindustH/atp/releases/download/v0.2.0/atp-0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+    sha256 "79e23fe44d6a62b9bc6403b106bd75ef6269ca71164c3b419006b1ba688a26e1"
   end
 
   def install
