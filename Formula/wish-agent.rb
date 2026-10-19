@@ -1,30 +1,30 @@
 class WishAgent < Formula
   desc "Self-hosted AI agent server and web app with shell tools and many model providers"
   homepage "https://github.com/WindustH/wish-core"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   conflicts_with "tcl-tk", because: "both install a `wish` binary"
 
   on_macos do
     on_arm do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.1/wish-agent-0.2.1-aarch64-apple-darwin.tar.gz"
-      sha256 "3e1056aad48bb884b6a9f60842c65d6f8ca62c521610d9c21af249bc8ca1e46c"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.2/wish-agent-0.2.2-aarch64-apple-darwin.tar.gz"
+      sha256 "a4dbed5aac9e2fbff69efe5246d8756d94c8c248ba11ef66662b4d0329bbb6c2"
     end
     on_intel do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.1/wish-agent-0.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "28cebcca6979bdebfe06bc6c2f8a4a650c2bfc664216008ad39546c15ca0d084"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.2/wish-agent-0.2.2-x86_64-apple-darwin.tar.gz"
+      sha256 "c07a9e402808afc1839027364d098ad772cf16ddeb79e118223506ff699ffd6e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.1/wish-agent-0.2.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7d2ab2b2ba0f32db8acc7de16b6dca1a5bc8d1197f56dec2f842e7dfbc53feb9"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.2/wish-agent-0.2.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3f092ae167ae07b880cdc94657ba13ed3d2aa3b8457f11e93e66ed0c88cb9cf9"
     end
     on_intel do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.1/wish-agent-0.2.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1ad321cb99b9ab144799bd58bcf1c2ee2317899de27905b4ca917fcede0ea66e"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.2/wish-agent-0.2.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "68c47b004acb0ce86906e41a13b29f1e7983f1a11231b6296bccbd1118c6a3bc"
     end
   end
 
