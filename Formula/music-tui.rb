@@ -1,7 +1,7 @@
 class MusicTui < Formula
   desc "Terminal music player backed by MPD, with covers, synced lyrics and a visualizer"
   homepage "https://github.com/WindustH/music-tui"
-  version "0.1.12"
+  version "0.1.13"
   license "MIT"
   head do
     url "https://github.com/WindustH/music-tui.git", branch: "main"
@@ -9,11 +9,11 @@ class MusicTui < Formula
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/WindustH/music-tui/releases/download/v0.1.12/music-tui-0.1.12-aarch64-apple-darwin.tar.gz"
-    sha256 "1b89f3597e530acbe5d54a6c3705f52c9256d6a128df0b8eba4297177d1b5b17"
+    url "https://github.com/WindustH/music-tui/releases/download/v0.1.13/music-tui-0.1.13-aarch64-apple-darwin.tar.gz"
+    sha256 "fefa97f604f51f3675b43d97e6e4e4cf4cdddd2c31e63319cb94ec8ceaa4188a"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/WindustH/music-tui/releases/download/v0.1.12/music-tui-0.1.12-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "e1b8ca0bbd6b959793ce3f44d79619cf2f102e36d58ba5f2b4e5a4e68e203af5"
+    url "https://github.com/WindustH/music-tui/releases/download/v0.1.13/music-tui-0.1.13-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "ceaecf24b1e39de9e96bb05c978bbe49d8db559dd111f6b77f91ae44100c7266"
   end
 
   depends_on "mpd"
