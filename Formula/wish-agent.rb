@@ -1,30 +1,30 @@
 class WishAgent < Formula
   desc "Self-hosted AI agent server and web app with shell tools and many model providers"
   homepage "https://github.com/WindustH/wish-core"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
 
   conflicts_with "tcl-tk", because: "both install a `wish` binary"
 
   on_macos do
     on_arm do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.4/wish-agent-0.2.4-aarch64-apple-darwin.tar.gz"
-      sha256 "88ea811fd2847b7c9fec018f53e99225e273419330c0bf98f5467b7daa819d21"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.5/wish-agent-0.2.5-aarch64-apple-darwin.tar.gz"
+      sha256 "63fbf0eefec61aeb9607e835cebeff2e25f3497b73007255593349fc6faf7915"
     end
     on_intel do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.4/wish-agent-0.2.4-x86_64-apple-darwin.tar.gz"
-      sha256 "d0b2e8b0a12b24ae218f56f9e7e21bd21ebb433216ef697d2d4c8cf63b4a60e4"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.5/wish-agent-0.2.5-x86_64-apple-darwin.tar.gz"
+      sha256 "4be0d3658416c5626bddef231ce872fbb8639edab451476444f23b42140eecf7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.4/wish-agent-0.2.4-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c524679cd2aef9b8b476e440542160b1aa7c90114c98f5751848e743e45c89ee"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.5/wish-agent-0.2.5-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "191068a5c5158ac5da02ada2294282629232ff7a948a98f2dfc64fe37bd142d7"
     end
     on_intel do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.4/wish-agent-0.2.4-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fe8083f68c4db493bb463b91bba60a7f08569ded0de478b083d4e072948e5296"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.5/wish-agent-0.2.5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7f197b1d561f15d32456d6dfae7881d92f5c5b9587080313217d36de3d5cc300"
     end
   end
 
