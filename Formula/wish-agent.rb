@@ -1,30 +1,30 @@
 class WishAgent < Formula
   desc "Self-hosted AI agent server and web app with shell tools and many model providers"
   homepage "https://github.com/WindustH/wish-core"
-  version "0.2.5"
+  version "0.2.6"
   license "MIT"
 
   conflicts_with "tcl-tk", because: "both install a `wish` binary"
 
   on_macos do
     on_arm do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.5/wish-agent-0.2.5-aarch64-apple-darwin.tar.gz"
-      sha256 "63fbf0eefec61aeb9607e835cebeff2e25f3497b73007255593349fc6faf7915"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.6/wish-agent-0.2.6-aarch64-apple-darwin.tar.gz"
+      sha256 "17500482a0592a56f43ac413389eec68cf30d37f650949ffacd19033019de91e"
     end
     on_intel do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.5/wish-agent-0.2.5-x86_64-apple-darwin.tar.gz"
-      sha256 "4be0d3658416c5626bddef231ce872fbb8639edab451476444f23b42140eecf7"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.6/wish-agent-0.2.6-x86_64-apple-darwin.tar.gz"
+      sha256 "b2fa4b6448eb60ee67e3d215acffdf2ae2b2e63c27725ebb39647f309acf67ac"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.5/wish-agent-0.2.5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "191068a5c5158ac5da02ada2294282629232ff7a948a98f2dfc64fe37bd142d7"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.6/wish-agent-0.2.6-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "58f94d96e9894f1760eb4804fc6271ca4a952d603dbda913fbf23926ed1aaa7a"
     end
     on_intel do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.5/wish-agent-0.2.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7f197b1d561f15d32456d6dfae7881d92f5c5b9587080313217d36de3d5cc300"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.6/wish-agent-0.2.6-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2c8431da449d2a9fba0664cf5d477cfc56d52cd275e2a5d76e743020e6573dad"
     end
   end
 
