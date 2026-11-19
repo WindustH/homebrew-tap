@@ -1,30 +1,30 @@
 class WishAgent < Formula
   desc "Self-hosted AI agent server and web app with shell tools and many model providers"
   homepage "https://github.com/WindustH/wish-core"
-  version "0.2.8"
+  version "0.2.9"
   license "MIT"
 
   conflicts_with "tcl-tk", because: "both install a `wish` binary"
 
   on_macos do
     on_arm do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.8/wish-agent-0.2.8-aarch64-apple-darwin.tar.gz"
-      sha256 "9706c3cb205574d56e5cf2e86efcd6570ef4734161b75e3b0533c204f7eb21e1"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.9/wish-agent-0.2.9-aarch64-apple-darwin.tar.gz"
+      sha256 "e594714f83c7c9b061461fd11709ff7845c3a4ea1fd5df19e9177e5d9a2a748f"
     end
     on_intel do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.8/wish-agent-0.2.8-x86_64-apple-darwin.tar.gz"
-      sha256 "304e8e59183cd6e0f686c802880992c50499cecd652582eb4111ec66783e321e"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.9/wish-agent-0.2.9-x86_64-apple-darwin.tar.gz"
+      sha256 "27dbdca12288a83125340d3cc2ae1d74486960ac2674c2aa427f3c0146201491"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.8/wish-agent-0.2.8-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "166fd47cce28c510c5ed79d1c684f474c1dd46082a291232d4fac190034826eb"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.9/wish-agent-0.2.9-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b5a94aaef975744415e3544f92c45a81ed41761bc7de7dbcd1acaf36a71a1248"
     end
     on_intel do
-      url "https://github.com/WindustH/wish-core/releases/download/v0.2.8/wish-agent-0.2.8-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "60d2c30d41093135248f0886681a0b1af12784de8ecc9d840601db3b2ca7aed6"
+      url "https://github.com/WindustH/wish-core/releases/download/v0.2.9/wish-agent-0.2.9-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ba4647c53d1a223c86269e42e274ff5b8a5bf09f0ad1be210169acde4a06bc64"
     end
   end
 
